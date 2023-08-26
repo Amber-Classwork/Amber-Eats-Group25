@@ -27,7 +27,7 @@
   display: flex;
   border-radius: .4rem;
   background-color: #fff;
-  box-shadow: 10px 10px 10px 1px rgb(185, 185, 185);
+  box-shadow: 0px 0px 10px 4px rgb(0,0,0,0.2);
   margin-bottom: 10rem;
 
 }
@@ -35,8 +35,9 @@
 .contact-form .form-img img{
   border-radius: .4rem 0rem 0rem .4rem;
   width: 25rem;
-  height: 35rem;
+  height: 100%;
   display: block;
+  object-fit: cover;
 }
 
 .contact-form form h2{
@@ -46,8 +47,8 @@
 }
 
 .contact-form form{
-  width: 45rem;
-  padding :2rem 0rem 0rem 3rem
+  width:100%;
+  padding :2rem;
  
 
 }
@@ -55,7 +56,7 @@
 .contact-form label{
   color: #777;
   font-size: 12px;
-margin-bottom: .8rem;
+  margin-bottom: .8rem;
   display: block;
   
 }
@@ -63,14 +64,21 @@ margin-bottom: .8rem;
 .contact-form input{
   outline: none;
   border: none;
-  width: 37rem;
+  width: 100%;
   border-bottom: 2px solid rgb(2, 189, 231);
   margin-bottom: 1.1rem;
+  padding: 5px;
 }
 
 .contact-form textarea{
   border: none;
-  background-color: rgb(245, 245, 245);
+  width: 100%;
+  border-bottom: 2px solid rgb(2, 189, 231);
+  outline:none;
+  max-width: 100%;
+  resize: vertical;
+  padding: 5px;
+
 }
 
 
