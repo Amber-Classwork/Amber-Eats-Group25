@@ -84,7 +84,7 @@ section h1{
     content: "";
     height: 50%;
     position:absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     right: 0;
     background-image: url("/assets/brush-stroke 2.png");
