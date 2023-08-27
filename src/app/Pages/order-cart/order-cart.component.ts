@@ -42,6 +42,14 @@ export class OrderCartComponent implements OnInit {
     window.history.back();
   }
 
+  checkCartBeforeCheckout(){
+    if(this.cartItems.length == 0){
+      alert("Please add items to your cart before checkout");
+    }else{
+      this.router.navigateByUrl("/checkout");
+    }
+  }
+
   removeItem(id:number){
     this.cartService.removeCartItem(id);
     this.cartItems = this.cartService.getCart();
